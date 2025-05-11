@@ -28,6 +28,47 @@ void main() {
   DateTime now = DateTime.now(); // 시간 변수 선언은 DateTime
 
   // const는 빌드 타임의 값을 모른다고 함!!
+
+  List<String> japan = [ '도쿄', '오사카' ];
+  List<int> age = [ 0, 1, 2, 3, 4, 5 ];
+
+  print(japan[0]); // 도쿄
+
+  Map<String, String> dic = {
+    '이름': '김동현',
+    '최종학력': '고졸',
+  }; // JS 오브젝트 ㅇㅇ
+
+  functionName(); // 호출하기!!!
+
+}
+
+// 함수는 간단함
+
+functionName() {
+  // 여기에 쓰면 됨
+}
+
+// 함수 앞에 void 쓰면 아무것도 반환해주지 않는다는 뜻이고, int는...뭐 알거라 생각함
+
+enum Status {
+  approved,
+  pending,
+  rejected,
+}
+
+void study() {
+  
+  Status status = Status.approved;
+
+  if (status == Status.approved) {
+    print('승인');
+  } else if (status == Status.pending) {
+    print('대기');
+  } else {
+    print('거절');
+  }
+
 }
 
 // dart run
