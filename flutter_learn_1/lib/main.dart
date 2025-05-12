@@ -10,7 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // 여기에 코드 입력
+      home: Center(
+        child: Container(width: 50, height: 50, color: Colors.blue)
+      );
     );
   }
 }
